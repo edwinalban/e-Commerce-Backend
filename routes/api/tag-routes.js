@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
   } catch (e) {
     res.status(500).json({ message: "Server Error" });
   }
-  });
+});
 
 router.post('/', async (req, res) => {
   // create a new tag
@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
     })
     res.json(newTag);
   } catch (e) {
-    res.status(500).json({message: `Error creating ${newTag}`});
+    res.status(500).json({ message: `Error creating ${newTag}` });
   }
 });
 
@@ -55,7 +55,7 @@ router.put('/:id', async (req, res) => {
     )
     res.status(200).json(updateTag);
   } catch (e) {
-    res.status(500).json({message: `Error updating ${updateTag}`});
+    res.status(500).json({ message: `Error updating ${updateTag}` });
   }
 });
 
@@ -66,10 +66,11 @@ router.delete('/:id', async (req, res) => {
       where: {
         id: req.params.id
       }
-})
-} catch (e) {
-  res.status(500).json({message: `Error deleting ${deleteTag}`});
-}
+    })
+    res.status(200).json(deleteTag);
+  } catch (e) {
+    res.status(500).json({ message: `Error deleting ${deleteTag}` });
+  }
 });
 
 module.exports = router;

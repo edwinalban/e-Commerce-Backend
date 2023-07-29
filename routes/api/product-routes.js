@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     const allProducts = await Product.findAll({
       include: [{ model: Category }, { model: Tag, as: "tags" }]
     })
-    res.json(allProducts)
+    res.status(200).json(allProducts)
   } catch (e) {
     res.status(500).json({ message: "Server Error" });
   }
@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
   const product = await Product.findByPk(req.params.id, {
     include: [{ model: Category }, { model: Tag, as: "tags" }]
   })
-  res.json(product);
+  res.status(200).json(product);
 } catch (e) {
   res.status(500).json({ message: "Server Error" });
 }
@@ -116,6 +116,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
 })
+res.status(200).json(deleteProduct);
 } catch (e) {
   res.status(500).json({message: `Error deleting ${deleteProduct}`});
 }
