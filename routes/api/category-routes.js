@@ -55,7 +55,7 @@ router.put('/:id', async (req, res) => {
     )
     res.status(200).json(updateCategory);
   } catch (e) {
-    res.status(500).json({message: "Error updating ${updateCategory}"});
+    res.status(500).json({message: `Error updating ${updateCategory}`});
   }
 });
 
@@ -63,13 +63,12 @@ router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
     const deleteCategory = await Category.destroy({
-      category_name: req.params.category_name,
       where: {
         id: req.params.id
       }
 })
 } catch (e) {
-  res.status(500).json({message: "Error deleting ${deleteCategory}"});
+  res.status(500).json({message: `Error deleting ${deleteCategory}`});
 }
 });
 
