@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Tag extends Model {}
+class Tag extends Model { }
 
 Tag.init(
   {
@@ -22,7 +22,7 @@ Tag.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'tag',
-  },
+  }
 );
 
 module.exports = Tag;
