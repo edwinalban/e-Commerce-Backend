@@ -32,19 +32,19 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    const newCategory = await Category.create({
+    await Category.create({
       category_name: req.body.category_name
     })
-    res.status(201).json(newCategory);
+    res.status(201).json(`Created ${req.body.category_name} Category`);
   } catch (e) {
-    res.status(500).json({ message: `Error creating ${newCategory}` });
+    res.status(500).json({ message: `Error creating ${req.body.category_name}` });
   }
 });
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
   try {
-    const updateCategory = await Category.update({
+    await Category.update({
       category_name: req.body.category_name
     },
       {
@@ -53,23 +53,23 @@ router.put('/:id', async (req, res) => {
         }
       }
     )
-    res.status(200).json(updateCategory);
+    res.status(200).json({ message: `Category Updated!` });
   } catch (e) {
-    res.status(500).json({ message: `Error updating ${updateCategory}` });
+    res.status(500).json({ message: `Error updating Category` });
   }
 });
 
 router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
-    const deleteCategory = await Category.destroy({
+    await Category.destroy({
       where: {
         id: req.params.id
       }
     })
-    res.status(200).json(deleteCategory);
+    res.status(200).json({ message: `Category Deleted!` });
   } catch (e) {
-    res.status(500).json({ message: `Error deleting ${deleteCategory}` });
+    res.status(500).json({ message: `Error deleting Category` });
   }
 });
 
