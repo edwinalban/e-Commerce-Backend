@@ -1,5 +1,6 @@
+// Import Tag model
 const { Tag } = require('../models');
-
+// Set up Tag data
 const tagData = [
   {
     tag_name: 'rock music',

@@ -1,3 +1,4 @@
+// Import routes/set up endpoints
 const router = require('express').Router();
 const apiRoutes = require('./api');
 

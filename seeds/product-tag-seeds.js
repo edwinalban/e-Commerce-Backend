@@ -1,5 +1,6 @@
+// Import ProductTag model
 const { ProductTag } = require('../models');
-
+// Set up Product Tag data
 const productTagData = [
   {
     product_id: 1,

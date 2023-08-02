@@ -1,5 +1,7 @@
+// Import Category model
 const { Category } = require('../models');
 
+// Set up category data
 const categoryData = [
   {
     category_name: 'Shirts',
