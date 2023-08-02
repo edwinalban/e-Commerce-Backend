@@ -1,6 +1,6 @@
 // Import Product model
 const { Product } = require('../models');
-// Set up product data
+// Set up Product data
 const productData = [
   {
     product_name: 'Plain T-Shirt',
