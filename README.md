@@ -35,12 +35,13 @@ Once the dependencies have been installed, type "npm run seed" to add the data t
 
 Finally, type "npm start" into the command line to start the server.
 
-![alt text](assets/images/)
-![alt text](assets/images/)
+![alt text](assets/images/e-commerce-backend-all-categories.png)
+![alt text](assets/images/e-commerce-backend-product-by-id.png)
+![alt text](assets/images/e-commerce-backend-update-tag.png)
 
 A link to the video to showcase the functionality of the app is below.
 
-https://drive.google.com/file/d/1NnwGKHx5wBLLrvjP1O0cv06fICjDhgOC/view
+[https://drive.google.com/file/d/1NnwGKHx5wBLLrvjP1O0cv06fICjDhgOC/view](https://drive.google.com/file/d/1K3j5O4Ynu6Xe-KTIR83dYUgo3m9I1AWv/view)
 
 ## Tests
 
