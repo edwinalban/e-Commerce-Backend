@@ -3,7 +3,7 @@ Backend for e-Commerce shopping
 
 ## Description
 
-I built this project in order to practice using MySQL databases and queries, as well as javascript models and express routes to view, add, edit, and delete information. It solves the problem of having to remember specific information for inventory, as all of the categories, products, and tags can be viewed by querying the database. I learned about building the back end structure for an app, using routes and models, and building relationships between tables via thorugh models.
+I built this project in order to practice using MySQL databases and queries, as well as javascript models and express routes to view, add, edit, and delete information. It solves the problem of having to remember specific information for inventory, as all of the categories, products, and tags can be viewed by querying the database. I learned about building the back end structure for an app, using routes and models, and building relationships between tables via through models.
 
 ## Table of Contents
 
@@ -45,4 +45,4 @@ A link to the video to showcase the functionality of the app is below.
 
 ## Tests
 
-This project can be tested by entering a variety of routes into Insomnia, or Postman and validating that the updates have been made running routes for viewing all categories, products, or tags depending on which updates were made.
+This project can be tested by entering a variety of routes into Insomnia, or Postman and validating that the updates have been made and running routes for viewing all categories, products, or tags depending on which updates were made.
